@@ -1,0 +1,17 @@
+@use '../../config/' as *;
+
+.atom-button-windowguest__button {
+  width: 100%;
+  border-radius: 16px;
+}
+
+#atom-button-windowguest__text {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-mode;
+}
+
+.atom-button-windowguest__button p {
+  color: $color-graytext;
+}

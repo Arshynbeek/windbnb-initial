@@ -1,0 +1,23 @@
+@use '../../config/' as *;
+
+.atom-button-optionlocation__button {
+  display: flex;
+}
+
+.atom-button-optionlocation__pin-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.atom-button-optionlocation__pin-icon.mode {
+  filter: brightness(100%) invert(100%);
+}
+
+.atom-button-optionlocation__button p {
+  margin-top: 3px;
+}
+
+.atom-button-optionlocation__button p.mode {
+  color: $color-white;
+}

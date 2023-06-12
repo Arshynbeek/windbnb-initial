@@ -1,0 +1,9 @@
+@use '../../config/' as *;
+
+.organism-card__block {
+  transition: 0.3s;
+}
+
+.organism-card__block:hover {
+  transform: scale(1.02);
+}

@@ -1,0 +1,49 @@
+include organism-card
+
+mixin template-body
+  -var IMAGE_1 = 'https://www.oppoliahome.com/wp-content/uploads/2022/09/modern-farmhouse-kitchen-cabinets-obk22-l15-2.jpg';
+  -var IMAGE_2 = 'https://www.home-designing.com/wp-content/uploads/2018/08/modern-colours-for-bedroom.jpg';
+  -var IMAGE_3 = 'https://i.pinimg.com/originals/c2/33/06/c233068465aa436a2e25af5dcad5221a.jpg';
+  -var IMAGE_4 = 'https://i.pinimg.com/originals/70/61/dc/7061dc7d5b8ef8f066afed61e960db4c.png';
+  -var IMAGE_5 = 'https://media.istockphoto.com/id/1213695547/photo/3d-rendering-of-an-elegant-bedroom.jpg?s=612x612&w=0&k=20&c=yxOoaz2IAd9zvtlXeS-Th-AiXhaCtMIxOONfGbtGeG8=';
+  -var IMAGE_6 = 'https://atimelessmemory.net/wp-content/uploads/sites/600/2022/09/kitchen-wall-clock-designs-for-your-home.jpg';
+
+  -var BUTTON_1 = true;
+  -var BUTTON_2 = false;
+  
+  -var INFO_1 = 'Entire apartment. 2 beds';
+  -var INFO_2 = 'Private room';
+  -var INFO_3 = 'Entire house';
+
+  -var RATING_1 = 4.47;
+  -var RATING_2 = 4.25;
+  -var RATING_3 = 4.95;
+  -var RATING_4 = 4.81;
+  -var RATING_5 = 4.54;
+  -var RATING_6 = 4.68;
+
+  -var ROOM_1 = 'Stylist apartment in center of the city';
+  -var ROOM_2 = 'Cozy, peaceful and private room with...';
+  -var ROOM_3 = 'Mordern House in a remote area';
+  -var ROOM_4 = 'Stylist room in design district ';
+  -var ROOM_5 = 'Modern apartment close to nature';
+  -var ROOM_6 = 'House in a remote area';
+
+  .template-body__field
+    .card1 
+      +organism-card(IMAGE_1, BUTTON_1, INFO_1, RATING_1, ROOM_1)
+
+    .card2 
+      +organism-card(IMAGE_2, BUTTON_2, INFO_2, RATING_2, ROOM_2)
+
+    .card3 
+      +organism-card(IMAGE_3, BUTTON_2, INFO_3, RATING_3, ROOM_3)
+
+    .card4 
+      +organism-card(IMAGE_4, BUTTON_1, INFO_1, RATING_4, ROOM_4)
+
+    .card5 
+      +organism-card(IMAGE_5, BUTTON_2, INFO_2, RATING_5, ROOM_5)
+
+    .card6 
+      +organism-card(IMAGE_6, BUTTON_2, INFO_3, RATING_6, ROOM_6)

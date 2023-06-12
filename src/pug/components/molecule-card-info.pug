@@ -1,0 +1,11 @@
+include atom-button-superhost
+include atom-text-cardinfo
+include atom-text-cardrating 
+
+mixin molecule-card-info(button, info, rating)
+  .molecule-card-info__info-block
+    .molecule-card-info__super-info-block
+      +atom-button-superhost(button)
+      +atom-text-cardinfo(info)
+
+    +atom-text-cardrating(rating)

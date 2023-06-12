@@ -1,2 +1,7 @@
+include ../components/molecule-search-block
+
 mixin header
   header
+    img.header-logo(src="../../../images/logo.png", alt="logo")
+    .header-search-block
+      +molecule-search-block

@@ -1,0 +1,10 @@
+include atom-button-minus 
+include atom-button-plus
+
+mixin molecule-guest-type(type, age, number, plus, minus)
+  p.molecule-guest-type__guest #{type}
+  p.molecule-guest-type__info #{age}
+  .molecule-guest-type__amount
+    +atom-button-minus(minus) 
+    p(id=number) 0
+    +atom-button-plus(plus)

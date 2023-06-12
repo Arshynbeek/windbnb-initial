@@ -1,11 +1,21 @@
 extends ../template/page
 
+include ../layout/header
 include ../components/dummy
+include ../components/atom-button-switchmode
 
 block variables
   - const pageTitle = 'index';
 
 block main
+  body#background-body
+  +atom-button-switchmode("true")
+
   main
     +content-wrap
       +dummy
+
+  footer created by - 
+    a(href="https://github.com/Arshynbeek") Arshynbeek 
+
+  script(src="../../js/elements/window.js")

@@ -1,0 +1,21 @@
+@use '../../config/' as *;
+
+.molecule-guest-type__amount {
+  margin-top: 10px;
+}
+
+.molecule-guest-type__guest {
+  color: $color-mode;
+}
+
+.molecule-guest-type__guest.mode {
+  color: $color-white;
+}
+
+.molecule-guest-type__info {
+  color: $color-graytext;
+}
+
+.molecule-guest-type__amount p {
+  color: $color-mode;
+}

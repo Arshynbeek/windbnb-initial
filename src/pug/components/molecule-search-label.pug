@@ -1,0 +1,11 @@
+include atom-button-search 
+
+mixin molecule-search-label(location, guest)
+  .molecule-search-label__label
+    button.molecule-search-label__location-button(onclick="openLocations()")
+      p.molecule-search-label__location-button-text location
+      p#molecule-search-label__location-text #{location}
+    button.molecule-search-label__guest-button(onclick="openGuests()")
+      p.molecule-search-label__guest-button-text guests 
+      p#molecule-search-label__guest-text #{guest}
+    +atom-button-search 

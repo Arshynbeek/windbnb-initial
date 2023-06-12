@@ -1,0 +1,20 @@
+@use '../../config/' as *;
+
+.atom-text-cardrating__block {
+  display: flex;
+  align-items: center;
+}
+
+.atom-text-cardrating__star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.atom-text-cardrating__rating {
+  margin-top: 4px;
+  color: $color-mode;
+}
+
+.atom-text-cardrating__rating.mode {
+  color: $color-white;
+}

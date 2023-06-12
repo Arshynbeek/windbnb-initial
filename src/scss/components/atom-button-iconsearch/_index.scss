@@ -1,0 +1,15 @@
+@use '../../config/' as *;
+
+.atom-button-iconsearch__block {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atom-button-iconsearch__icon {
+  width: 30px;
+  height: 30px;
+}

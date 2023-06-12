@@ -1,0 +1,68 @@
+@use '../../config/' as *;
+
+.molecule-search-label__label {
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  box-shadow: 0px 1px 6px $color-shadow;
+}
+
+.molecule-search-label__label.mode {
+  border: 1px solid $color-white;
+}
+
+.molecule-search-label__location-button {
+  width: 100%;
+  padding: 0 20px;
+  text-align: start;
+}
+
+.molecule-search-label__location-button:hover {
+  border-radius: 16px 0 0 16px;
+  border: 1px solid $color-black;
+}
+
+#molecule-search-label__location-text, #molecule-search-label__guest-text {
+  margin-top: 2px;
+  color: $color-mode;
+}
+
+#molecule-search-label__location-text.mode {
+  color: $color-white;
+}
+
+#molecule-search-label__guest-text.mode {
+  color: $color-white;
+}
+
+.molecule-search-label__location-button-text, .molecule-search-label__guest-button-text {
+  color: $color-mode;
+}
+
+.molecule-search-label__location-button-text.mode {
+  color: $color-white;
+}
+
+.molecule-search-label__guest-button-text.mode {
+  color: $color-white;
+}
+
+.molecule-search-label__guest-button {
+  width: 100%;
+  padding: 0 20px;
+  text-align: start;
+}
+
+.molecule-search-label__guest-button:hover {
+  border-radius: 0 16px 16px 0;
+  border: 1px solid $color-black;
+}
+@media screen and (max-width: 650px) {
+  .molecule-search-label__label {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}

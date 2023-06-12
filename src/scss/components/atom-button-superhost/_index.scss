@@ -1,0 +1,16 @@
+@use '../../config/' as *;
+
+.atom-button-superhost__button {
+  padding: 2px 10px;
+  margin-right: 20px;
+  border: 1px solid $color-mode;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $color-mode;
+}
+
+.atom-button-superhost__button.mode {
+  color: $color-white;
+  border: 1px solid $color-white;
+}

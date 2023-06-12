@@ -1,0 +1,14 @@
+@use '../../config/' as *;
+
+.atom-button-minus__button {
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  border: 1px solid $color-gray;
+  border-radius: 4px;
+}
+
+.atom-button-minus__button.mode {
+  border: 1px solid $color-white;
+  color: $color-white;
+}

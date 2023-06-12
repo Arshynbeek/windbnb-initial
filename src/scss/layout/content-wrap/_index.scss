@@ -1,1 +1,30 @@
 @use 'content-wrap-base';
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-search-block {
+  width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-search-block {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    display: initial;
+  }
+
+  .header-search-block {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

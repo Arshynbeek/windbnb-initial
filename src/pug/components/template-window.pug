@@ -1,0 +1,24 @@
+include atom-button-close 
+include atom-button-optionlocation
+include molecule-search-label 
+include molecule-guest-type
+
+mixin template-window
+  #window
+    .window-content 
+      +molecule-search-label 
+
+      #location-list 
+        +atom-button-optionlocation("kazakhstan, Almaty", "id1")
+        +atom-button-optionlocation("Bagan, Myanmar", "id2")
+        +atom-button-optionlocation("Kazakhstan, Taldykorgan", "id3")
+        +atom-button-optionlocation("Victoria, Zimbabwe", "id4")
+
+      #guest-list 
+        .adult 
+          +molecule-guest-type('Adults', 'Ages 13 or above', 'adult-number', 'plusAdults()', 'minusAdults()')
+        
+        .child 
+          +molecule-guest-type('Children', 'Ages 2 - 12', 'child-number', 'plusChildrens()', 'minusChildrens()')
+
+      +atom-button-close 

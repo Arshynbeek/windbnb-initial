@@ -1,0 +1,9 @@
+include atom-block-cardimage
+include molecule-card-info
+include atom-text-cardroom
+
+mixin organism-card(image, button, info, rating, room)
+  .organism-card__block
+    +atom-block-cardimage(`${image}`)
+    +molecule-card-info(button, info, rating)
+    +atom-text-cardroom(room)

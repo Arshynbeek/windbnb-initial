@@ -1,0 +1,43 @@
+@use '../../config/' as *;
+
+.molecule-search-block__block {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0px 1px 6px $color-shadow;
+}
+
+.molecule-search-block__block.mode {
+  border: 1px solid $color-white;
+}
+
+.molecule-search-block__location-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $color-grayborder;
+}
+
+.molecule-search-block__guest-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $color-grayborder;
+}
+
+#molecule-search-block__location-button-text, #molecule-search-block__guest-button-text {
+  color: $color-mode;
+}
+
+#molecule-search-block__location-button-text.mode {
+  color: $color-white;
+}
+
+#molecule-search-block__guest-button-text.mode {
+  color: $color-white;
+}

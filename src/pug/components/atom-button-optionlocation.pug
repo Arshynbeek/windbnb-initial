@@ -1,0 +1,5 @@
+mixin atom-button-optionlocation(place, id)
+  -var id = 'atom-button-optionlocation__text-' + `${id}`
+  button.atom-button-optionlocation__button(onclick=`change('${id}')`)
+    img.atom-button-optionlocation__pin-icon(src="../../../images/pin-icon.png", alt="pin icon")
+    p(id=id) #{place}

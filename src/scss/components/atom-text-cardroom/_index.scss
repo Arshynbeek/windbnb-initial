@@ -1,0 +1,10 @@
+@use '../../config/' as *;
+
+.atom-text-cardroom__room-info {
+  font-weight: 600;
+  color: $color-mode;
+}
+
+.atom-text-cardroom__room-info.mode {
+  color: $color-white;
+}

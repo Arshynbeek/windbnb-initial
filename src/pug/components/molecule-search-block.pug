@@ -1,0 +1,11 @@
+include atom-button-iconsearch
+
+mixin molecule-search-block
+  .molecule-search-block__block 
+    .molecule-search-block__location-block
+      button.molecule-search-block__location-button(onclick="action()") 
+        p#molecule-search-block__location-button-text Add location
+    .molecule-search-block__guest-block
+      button.molecule-search-block__guest-button(onclick="action()")
+        p#molecule-search-block__guest-button-text Add guests
+    +atom-button-iconsearch

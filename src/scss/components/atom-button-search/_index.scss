@@ -1,0 +1,31 @@
+@use '../../config/' as *;
+
+.atom-button-search__button {
+  width: 15%;
+  padding: 12px 0;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: $color-crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atom-button-search__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: brightness(1000%) invert(100%);
+}
+
+.atom-button-search__text {
+  color: $color-white;
+}
+
+@media screen and (max-width: 650px) {
+  .atom-button-search__button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

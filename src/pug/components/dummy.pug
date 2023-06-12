@@ -1,2 +1,9 @@
+include molecule-title
+include template-body
+include template-window
+
 mixin dummy
-  h1 hello world!
+  +molecule-title
+  .content-field
+    +template-body
+    +template-window

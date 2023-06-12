@@ -1,0 +1,14 @@
+@use '../../config/' as *;
+
+.molecule-card-info__info-block {
+  width: 100%;
+  margin: 15px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.molecule-card-info__super-info-block {
+  display: flex;
+  align-items: center;
+}

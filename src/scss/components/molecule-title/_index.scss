@@ -1,0 +1,25 @@
+@use '../../config/' as *;
+
+.molecule-title__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+#molecule-title__title-h1 {
+  font-weight: 600;
+  color: $color-mode;
+}
+
+#molecule-title__title-h1.mode {
+  color: $color-white;
+}
+
+#molecule-title__title-text {
+  color: $color-mode;
+}
+
+#molecule-title__title-text.mode {
+  color: $color-white;
+}
